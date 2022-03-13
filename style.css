@@ -1,0 +1,78 @@
+.gridRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+    padding-top: 25%;
+    background-color: rgb(33, 43, 194);
+    border: .4rem solid pink;
+    border-radius: .5rem;
+}
+
+.column {
+    float: right;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(217, 219, 243);
+    border: .4rem solid rgb(48, 43, 44);
+    border-radius: .5rem;
+}
+
+.Opcolumn {
+    float: right;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(64, 77, 223);
+    border: .4rem solid rgb(48, 43, 44);
+    border-radius: .5rem;
+}
+
+.entryField {
+    float: right;
+    width: 435px;
+    height: 100px;
+    background-color: white;
+    border: .4rem solid rgb(48, 43, 44);
+    border-radius: .5rem;
+    float: right;
+}
+
+
+/* Clear floats after the columns */
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 30px;
+}
+
+.cell {
+    flex: 4;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+    border: .4rem solid black;
+    border-radius: 15rem;
+}
+
+.row2 {
+    flex: 4;
+    background-color: rgb(170, 174, 235);
+    border: .4rem solid black;
+    border-radius: .5rem;
+    font-size: 30pt;
+    width: 50px;
+    ;
+}
+
+.grid {
+    width: 80%;
+    align-content: center;
+    height: 45%;
+    padding-top: 1%;
+    border: .4rem solid black;
+    border-radius: .5rem;
+}
+
+.html {
+    font-size: 24px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eileen's Calculator</title>
+    <script type="text/javascript" src="calculator.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row"> <textarea readonly="true" id="txtEntry" class="entryField"></textarea></div>
+    <div id="grid4" class="row">
+        <div id="btnDivide" onclick="doMath('Divide')" class="Opcolumn">/</div>
+        <div id="btn9" onclick="WriteNumber(9)" class="column">9</div>
+        <div id="btn8" onclick="WriteNumber(8)" class="column">8 </div>
+        <div id="btn7" onclick="WriteNumber(7)" class="column">7</div>
+
+
+    </div>
+    <div id="grid3" class="row">
+        <div id="btnMultiply" onclick="doMath('Multiply')" class="Opcolumn">x</div>
+        <div id="btn6" onclick="WriteNumber(6)" class="column">6</div>
+        <div id="btn5" onclick="WriteNumber(5)" class="column">5</div>
+        <div id="btn4" onclick="WriteNumber(4)" class="column">4</div>
+
+    </div>
+    <div id="grid2" class="row">
+        <div id="btnSubtract" onclick="doMath('Subtract')" class="Opcolumn">-</div>
+        <div id="btn3" onclick="WriteNumber(3)" class="column">3</div>
+        <div id="btn2" onclick="WriteNumber(2)" class="column">2</div>
+        <div id="btn1" onclick="WriteNumber(1)" class="column">1</div>
+
+
+    </div>
+    <div id="grid1" class="row">
+        <div id="btnAdd" onclick="doMath('Add')" class="Opcolumn">+</div>
+        <div id="btnEquals" onclick="getTotal()" class="Opcolumn">=</div>
+        <div id="btnPeriod" class="column">.</div>
+        <div id="btn0" onclick="WriteNumber(0)" class="column">0</div>
+
+    </div>
+    <div id="grid0" class="row">
+
+        <div id="btnClear" onclick="Clear()" class="Opcolumn">AC</div>
+
+    </div>
+</body>
+
+</html>
