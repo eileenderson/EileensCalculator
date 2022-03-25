@@ -7,14 +7,22 @@
     border: .4rem solid pink;
     border-radius: .5rem;
 }
+.clicking{
+    transform: scale(1:1);
+    border-color: red;
+    box-shadow: 0 0 10px brown;
+}
 
 .column {
     float: right;
     width: 100px;
     height: 35px;
+    transition: all 1s;
+    
     background-color: rgb(217, 219, 243);
     border: .4rem solid rgb(48, 43, 44);
     border-radius: .5rem;
+    text-align: center;
 }
 
 .Opcolumn {
@@ -24,16 +32,18 @@
     background-color: rgb(64, 77, 223);
     border: .4rem solid rgb(48, 43, 44);
     border-radius: .5rem;
+    text-align: center;
 }
 
 .entryField {
     float: right;
     width: 435px;
-    height: 100px;
+    height: 40px;
     background-color: white;
     border: .4rem solid rgb(48, 43, 44);
     border-radius: .5rem;
     float: right;
+    text-align:right;
 }
 
 
@@ -55,13 +65,14 @@
 }
 
 .row2 {
-    flex: 4;
-    background-color: rgb(170, 174, 235);
-    border: .4rem solid black;
+    float: right;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(217, 219, 243);
+    border: .4rem solid rgb(221, 218, 17);
     border-radius: .5rem;
-    font-size: 30pt;
-    width: 50px;
-    ;
+    transition: all 1s;
+
 }
 
 .grid {

@@ -19,11 +19,11 @@ const sum = function(num1) {
 };
 
 const multiply = function(num1, num2) {
-    let total = 1;
-    for (let i = 0; i < num1.length; i++) {
-        total = total * num1[i];
-    }
-    return total;
+   // let total = 1;
+   // for (let i = 0; i < num1.length; i++) {
+   //     total = total * num1[i];
+   // }
+    return num1*num2;
 };
 
 const power = function(num1, num2) {
@@ -56,8 +56,7 @@ function getTotal() {
     console.log(previousValue);
     switch (operand) {
         case "Add":
-
-            currentNum.value = sum(previousValue, currentNum.value);
+            currentNum.value = add(previousValue, currentNum.value);
             clearOperand();
             break;
         case "Subtract":
@@ -91,7 +90,6 @@ function Clear() {
 
 function WriteNumber(number) {
 
-
     if (operand !== '') {
         currentNum.value = '';
     }
@@ -99,7 +97,10 @@ function WriteNumber(number) {
         currentNum.value = currentNum.value + number;
     } else
         currentNum.value = number;
+        
 }
+
+
 // Do not edit below this line
 //module.exports = {
 //add,
